@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スペースインベーダー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="game-header">
+            <h1>スペースインベーダー</h1>
+        </header>
+        <main class="game-main">
+            <canvas id="gameCanvas" width="480" height="360"></canvas>
+            <div class="game-overlay" id="gameOverlay">
+                <div class="overlay-content" id="overlayContent">
+                    <!-- スタート画面の内容はJSで生成します -->
+                </div>
+            </div>
+        </main>
+        <div class="mobile-controls" id="mobileControls">
+            <button id="leftBtn" class="control-btn">←</button>
+            <button id="fireBtn" class="control-btn fire-btn">発射</button>
+            <button id="rightBtn" class="control-btn">→</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
